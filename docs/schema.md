@@ -769,6 +769,9 @@ func BeforeLimits(v, range)
 ```
 
 ### Examples
+
+#### Example where every version is affected
+
 The following expresses that "every possible version is affected".
 
 ```json
@@ -779,6 +782,8 @@ The following expresses that "every possible version is affected".
     ]
 } ]
 ```
+
+#### Example using "fixed"
 
 The following expresses that "everything before `1.0.2`" is affected.
 
@@ -792,6 +797,7 @@ The following expresses that "everything before `1.0.2`" is affected.
 } ]
 ```
 
+#### 
 The following expresses that versions in the SemVer ranges `[1.0.0,
 1.0.2)` or `[3.0.0, 3.2.5)` are affected. Everything else is unaffected.
 
